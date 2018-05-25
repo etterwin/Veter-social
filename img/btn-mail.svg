@@ -1,0 +1,28 @@
+<svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>006-mail</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1553 -5286)">
+<g id="006-mail">
+<g id="Group">
+<g id="Group">
+<g id="Rectangle">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(1553 5286)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1553 5286)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Vector 2">
+<use xlink:href="#path2_stroke" transform="translate(1554 5287)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 14 0L 14 9L 0 9L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 14 0L 15 0L 15 -1L 14 -1L 14 0ZM 14 9L 14 10L 15 10L 15 9L 14 9ZM 0 9L -1 9L -1 10L 0 10L 0 9ZM 0 1L 14 1L 14 -1L 0 -1L 0 1ZM 13 0L 13 9L 15 9L 15 0L 13 0ZM 14 8L 0 8L 0 10L 14 10L 14 8ZM 1 9L 1 0L -1 0L -1 9L 1 9Z"/>
+<path id="path2_stroke" d="M 6 4L 5.72265 4.41603L 6 4.60093L 6.27735 4.41603L 6 4ZM -0.27735 0.416025L 5.72265 4.41603L 6.27735 3.58397L 0.27735 -0.416025L -0.27735 0.416025ZM 6.27735 4.41603L 12.2774 0.416025L 11.7226 -0.416025L 5.72265 3.58397L 6.27735 4.41603Z"/>
+</defs>
+</svg>

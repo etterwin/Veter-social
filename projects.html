@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SV</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <div class="wrapper wrapper_header">
+            <div class="container">
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <div class="menu">
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Мы</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Общение</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Союзы</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Взаимопомощь</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Организации</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Товары и услуги</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__search">
+                        <div class="search">
+                            <input type="text" placeholder="Спросить советника">
+                            <button type="button"></button>
+                        </div>
+                    </div>
+                    <div class="header__uses">
+                        <div class="header__use header__use_message header__use_note">
+                            <a href="#">
+                                <span class="use__ico"></span>
+                            </a>
+                        </div>
+                        <div class="header__use header__use_notif">
+                            <a href="#">
+                                <span class="use__ico"></span>
+                            </a>
+                        </div>
+                        <div class="header__use header__use_idea">
+                            <a href="#">
+                                <span class="use__ico"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper_user">
+            <div class="container">
+                <div class="user">
+                    <div class="user__items">
+                        <div class="user__item-list">
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Я</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Дневник</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Жизнь</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Работа</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Учеба</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Альбом</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Избранное</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user__right">
+                        <a href="#">
+                            <div class="user__right-cont">
+                                <div class="user__name">
+                                    <span>Павел Галт</span>
+                                </div>
+                                <div class="user__img">
+                                    <img src="./img/user-img.png" alt="">
+                                </div>
+                                <div class="user__ar">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="wrap wrap_projects">
+                    <div class="cont">
+                        <div class="head">
+                            <div class="head__box">
+                                <div class="title">
+                                    <div class="title__vis">
+                                        <div class="ico">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="title__txt">
+                                        <h4>Проекты</h4>
+                                    </div>
+                                </div>
+                                <div class="use">
+                                    <div class="button">
+                                        <a href="#">
+                                            <div class="btn">
+                                                <span>Новая группа</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#">
+                                            <div class="btn">
+                                                <span>Новый проект</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content__box">
+                                <div class="projects">
+                                    <div class="projects__search">
+                                        <div class="search">
+                                            <input type="text" placeholder="Поиск по проектам">
+                                            <button type="button"></button>
+                                        </div>
+                                    </div>
+                                    <div class="projects__folders">
+                                        <div class="projects__folders-list">
+                                            <div class="folder">
+                                                <div class="folder__imgs">
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/car.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/car.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/car.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/unknwn.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="folder__info">
+                                                    <div class="folder__name">
+                                                        <span>Рабочие</span>
+                                                    </div>
+                                                    <div class="folder__num">
+                                                        <span>12 проектов</span>
+                                                    </div>
+                                                    <div class="folder__edit"></div>
+                                                </div>
+                                            </div>
+                                            <div class="folder">
+                                                <div class="folder__imgs">
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/car.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/car.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/unknwn.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/unknwn.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="folder__info">
+                                                    <div class="folder__name">
+                                                        <span>Личные</span>
+                                                    </div>
+                                                    <div class="folder__num">
+                                                        <span>34 проекта</span>
+                                                    </div>
+                                                    <div class="folder__edit"></div>
+                                                </div>
+                                            </div>
+                                            <div class="folder">
+                                                <div class="folder__imgs">
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/car.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/unknwn.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/unknwn.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="img">
+                                                        <a href="#">
+                                                            <img src="./img/unknwn.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="folder__info">
+                                                    <div class="folder__name">
+                                                        <span>Учеба</span>
+                                                    </div>
+                                                    <div class="folder__num">
+                                                        <span>19 проектов</span>
+                                                    </div>
+                                                    <div class="folder__edit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects__items">
+                                        <div class="items">
+                                            <div class="items__sides">
+                                                <div class="items__side items__side_l">
+                                                    <div class="item-list">
+                                                        <div class="item item_new">
+                                                            <div class="item__img">
+                                                                <img src="./img/proj-new.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="items__side items__side_r">
+                                                    <div class="item-list">
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="item__img">
+                                                                <img src="./img/car.png" alt="">
+                                                            </div>
+                                                            <div class="item__info">
+                                                                <div class="item__title">
+                                                                    <span>Новый проект</span>
+                                                                </div>
+                                                                <div class="item__dscrp">
+                                                                    <span>Описание проекта</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__private">
+                                                                <div class="private__ico"></div>
+                                                            </div>
+                                                            <div class="item__tools">
+                                                                <div class="item__tool item__tool_edit"></div>
+                                                                <div class="item__tool item__tool_delete"></div>
+                                                                <div class="item__tool item__tool_block"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper wrapper_footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__items">
+                        <div class="footer__items-list">
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>О проекте</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>Обратная связь</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>Замечания разработчикам</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>Политика конфиденциальности</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__sv">
+                        <span>©  2018  Свежий ветер</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

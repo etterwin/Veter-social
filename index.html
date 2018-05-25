@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SV</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <div class="wrapper wrapper_header">
+            <div class="container">
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <div class="menu">
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Мы</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Общение</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Союзы</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Взаимопомощь</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Организации</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu__item">
+                                <a href="#">
+                                    <div class="menu__item-cont">
+                                        <span>Товары и услуги</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__search">
+                        <div class="search">
+                            <input type="text" placeholder="Спросить советника">
+                            <button type="button"></button>
+                        </div>
+                    </div>
+                    <div class="header__uses">
+                        <div class="header__use header__use_message header__use_note">
+                            <a href="#">
+                                <span class="use__ico"></span>
+                            </a>
+                        </div>
+                        <div class="header__use header__use_notif">
+                            <a href="#">
+                                <span class="use__ico"></span>
+                            </a>
+                        </div>
+                        <div class="header__use header__use_idea">
+                            <a href="#">
+                                <span class="use__ico"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper_user">
+            <div class="container">
+                <div class="user">
+                    <div class="user__items">
+                        <div class="user__item-list">
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Я</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Дневник</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Жизнь</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Работа</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Учеба</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Альбом</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="user__item">
+                                <a href="#">
+                                    <div class="user__item-cont">
+                                        <span>Избранное</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user__right">
+                        <a href="#">
+                            <div class="user__right-cont">
+                                <div class="user__name">
+                                    <span>Павел Галт</span>
+                                </div>
+                                <div class="user__img">
+                                    <img src="./img/user-img.png" alt="">
+                                </div>
+                                <div class="user__ar">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper_top">
+            <div class="container">
+                <div class="top">
+                    <div class="top__info">
+                        <div class="info">
+                            <div class="info__img">
+                                <img src="./img/ava-main.png" alt="">
+                            </div>
+                            <div class="info__txt">
+                                <div class="info__name">
+                                    <span>Мария Шуткова</span>
+                                </div>
+                                <div class="info__other">
+                                    <span class="info__old">21 год</span>
+                                    <span class="info__city">Нижний Новгород</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__buttons">
+                        <div class="buttons">
+                            <div class="button">
+                                <a href="#">
+                                    <div class="btn btn_acq">
+                                        <span>Познакомитьcя</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="button">
+                                <a href="#">
+                                    <div class="btn btn_write">
+                                        <span>Написать сообщение</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="sides">
+                    <div class="side side_l">
+
+                        <div class="wrap wrap_status">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__vis">
+                                                <div class="ico">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="status">
+                                            <div class="status__text">
+                                                <span>Уехала на Карибы, нежится на золотых пеках и купатсья в лазурном море!<img class="emod" src="./img/emod-palm.png" alt=""><img class="emod" src="./img/emon-sun.png" alt=""></span>
+                                            </div>
+                                            <div class="status__acq">
+                                                <div class="acq">
+                                                    <div class="acq__title">
+                                                        Вас познакомил
+                                                    </div>
+                                                    <div class="acq__name">
+                                                        <a href="#">
+                                                            <span>Сергей Иконников</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap wrap_inform">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__vis">
+                                                <div class="ico">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="title__txt">
+                                                <h4>Информация</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="inform">
+                                            <div class="inform__sides">
+                                                <div class="inform__side inform__side_l">
+                                                    <div class="inform__items">
+                                                        <div class="inform__item inform__item_hobby">
+                                                            <div class="item__title">
+                                                                <div class="item__title-ico">
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="item__title-txt">
+                                                                    <span>Увлечения</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__box">
+                                                                <div class="item__radios">
+                                                                    <div class="radio radio_1">
+                                                                        <span></span>
+                                                                        <div class="radio__dscrp">Плавание</div>
+                                                                    </div>
+                                                                    <div class="radio radio_2">
+                                                                        <span></span>
+                                                                        <div class="radio__dscrp">Плавание</div>
+                                                                    </div>
+                                                                    <div class="radio radio_3">
+                                                                        <span></span>
+                                                                        <div class="radio__dscrp">Плавание</div>
+                                                                    </div>
+                                                                    <div class="radio radio_4">
+                                                                        <span></span>
+                                                                        <div class="radio__dscrp">Плавание</div>
+                                                                    </div>
+                                                                    <div class="radio radio_5">
+                                                                        <span></span>
+                                                                        <div class="radio__dscrp">Плавание</div>
+                                                                    </div>
+                                                                    <div class="radio radio_6">
+                                                                        <span></span>
+                                                                        <div class="radio__dscrp">Плавание</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inform__item inform__item_skills">
+                                                            <div class="item__title">
+                                                                <div class="item__title-ico">
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="item__title-txt">
+                                                                    <span>Навыки</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__box">
+                                                                <div class="item__skills">
+                                                                    <div class="skill">
+                                                                        <div class="skill__name">
+                                                                            <span>Спортсменка</span>
+                                                                        </div>
+                                                                        <div class="skill__circs">
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="skill">
+                                                                        <div class="skill__name">
+                                                                            <span>Кулинария</span>
+                                                                        </div>
+                                                                        <div class="skill__circs">
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ"></span>
+                                                                            <span class="skill__circ"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="skill">
+                                                                        <div class="skill__name">
+                                                                            <span>Рисование от руки</span>
+                                                                        </div>
+                                                                        <div class="skill__circs">
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ skill__circ_painted"></span>
+                                                                            <span class="skill__circ"></span>
+                                                                            <span class="skill__circ"></span>
+                                                                            <span class="skill__circ"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item__skills-more">
+                                                                    <span>Еще</span>
+                                                                    <span class="num">(3)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inform__side inform__side_r">
+                                                    <div class="inform__items">
+                                                        <div class="inform__item inform__item_mission">
+                                                            <div class="item__title">
+                                                                <div class="item__title-ico">
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="item__title-txt">
+                                                                    <span>Миссия</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__box">
+                                                                <div class="item__text">
+                                                                    <span>Нести добро в мир, сделать его лучше, спасать котиков</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inform__item inform__item_work">
+                                                            <div class="item__title">
+                                                                <div class="item__title-ico">
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="item__title-txt">
+                                                                    <span>Работа</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__box">
+                                                                <div class="item__link">
+                                                                    <a href="#">
+                                                                        <span>Салон сотовой связи Beeline</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="inform__item inform__item_success">
+                                                            <div class="item__title">
+                                                                <div class="item__title-ico">
+                                                                    <span></span>
+                                                                </div>
+                                                                <div class="item__title-txt">
+                                                                    <span>Успехи</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__box">
+                                                                <div class="item__text">
+                                                                    <span>Золотая медаль по плаванию <img class="emod" src="" alt=""></span>
+                                                                    <span>Золотая медаль по плаванию</span>
+                                                                    <span>Золотая медаль по плаванию</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap wrap_opinion">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__vis">
+                                                <div class="ico">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="title__txt">
+                                                <h4>Мнение</h4>
+                                            </div>
+                                            <div class="title__q">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="use">
+                                            <div class="button">
+                                                <a href="#">
+                                                    <div class="btn">
+                                                        <span>Смотреть все (34)</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="opinions">
+                                            <div class="opinions-list">
+                                                <div class="opinion">
+                                                    <div class="opinion__text">
+                                                        <span>“ Очень милая девчонка, общительная, честная. Очень приятный человек “</span>
+                                                    </div>
+                                                    <div class="opinion__user">
+                                                        <div class="user__img">
+                                                            <a href="#">
+                                                                <img src="./img/op-ava1.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="user__name">
+                                                            <a href="#">
+                                                                <span>Таня Шиндина</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="opinion">
+                                                    <div class="opinion__text">
+                                                        <span>“ Очень милая девчонка, общительная, честная. Очень приятный человек “</span>
+                                                    </div>
+                                                    <div class="opinion__user">
+                                                        <div class="user__img">
+                                                            <a href="#">
+                                                                <img src="./img/op-ava2.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="user__name">
+                                                            <a href="#">
+                                                                <span>Антон Александрович</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="opinion">
+                                                    <div class="opinion__text">
+                                                        <span>“ Очень милая девчонка, общительная, честная. Очень приятный человек “</span>
+                                                    </div>
+                                                    <div class="opinion__user">
+                                                        <div class="user__img">
+                                                            <a href="#">
+                                                                <img src="./img/op-ava3.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="user__name">
+                                                            <a href="#">
+                                                                <span>Анастасия Ширкова</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="subtitle">
+                                            <h5>Ваше мнение</h5>
+                                        </div>
+                                        <div class="youropin">
+                                            <form action="" method="">
+                                                <fieldset>
+                                                    <div class="youropin__sides">
+                                                        <div class="youropin__side youropin__side_l">
+                                                            <div class="selblock">
+                                                                <div class="selblock__selects">
+                                                                    <div class="select select_my">
+                                                                        <div class="select__title">
+                                                                            <span>Это мой:</span>
+                                                                        </div>
+                                                                        <div class="select__item">
+                                                                            <span>семья</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="select select_rel">
+                                                                        <div class="select__title">
+                                                                            <span>Отношения:</span>
+                                                                        </div>
+                                                                        <div class="select__item">
+                                                                            <span>лучшие друзья</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="selblock__comment">
+                                                                    <div class="comment__title">
+                                                                        <span>Комментарий</span>
+                                                                    </div>
+                                                                    <div class="comment__area">
+                                                                        <textarea rows="2"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="youropin__side youropin__side_r">
+                                                            <div class="skills">
+                                                                <div class="skills__sides">
+                                                                    <div class="skills__side skills__side_l">
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="skills__side skills__side_r">
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="skill">
+                                                                            <div class="skill__name">
+                                                                                <span>Доброта</span>
+                                                                            </div>
+                                                                            <div class="skill__circs">
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ skill__circ_painted"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                                <span class="skill__circ"></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="youropin__button">
+                                                        <button class="btn" type="submit">
+                                                            <span>Сохранить мнение</span>
+                                                        </button>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap wrap_diary">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__vis">
+                                                <div class="ico">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="title__txt title__txt_link">
+                                                <a href="#">
+                                                    <h4>Дневник</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="use">
+                                            <div class="calend" id="datepicker"></div>
+                                            <div class="search"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="diary">
+                                            <div class="diary__swipe swiper-container">
+                                                <div class="diary__swipe-cont swiper-wrapper">
+                                                    <div class="item swiper-slide">
+                                                        <div class="item__head">
+                                                            <div class="item__ava">
+                                                                <a href="#">
+                                                                    <img src="./img/ph-2.png" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="item__other">
+                                                                <div class="item__name">
+                                                                    <a href="#">
+                                                                        <span>Мария Шуткова</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item__date">
+                                                                    <span>25 июля 2017 в 10:35</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__more">
+                                                                <a href="#">
+                                                                    <div class="more-ico"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item__main">
+                                                            <a href="#">
+                                                                <div class="item__bg">
+                                                                    <img src="./img/diary-it-1.png" alt="">
+                                                                </div>
+                                                                <div class="item__title">
+                                                                    <h3>Друзья! Зима близко пора всем утепляться!</h3>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item__content">
+                                                            <div class="item__marks">
+                                                                <div class="btn mark">
+                                                                    <span>Друзья</span>
+                                                                </div>
+                                                                <div class="btn mark">
+                                                                    <span>Путешествия</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__text">
+                                                                <span>Друзья! Зима близко и если вы еще не утеплились, то самое время) прекрасная Алена <a href="#">@origami_stories</a> не оставит ваши уши на морозе) очень нежные и теплые шапочки ждут вас! п.с. а еще у Алены очень красивый профиль в инстаграм, все туда за вдохновением по всем вопросам прошу ко мне в личные сообщения.</span>
+                                                            </div>
+                                                            <div class="item__adress">
+                                                                <a href="#">
+                                                                    <span>Nizhni Novgorod region, N.Novgorod, Alekseevskaya 6</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item__opinions">
+                                                                <div class="item__opinions-cont">
+                                                                    <div class="item__opinion-list">
+                                                                        <div class="item__opinion item__opinion_happy">
+                                                                            <span></span>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item__opinion-val">
+                                                                        <span>45</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item__opinions-panel">
+                                                                    <div class="item__opinions-list">
+                                                                        <div class="item__opinion item__opinion_happy">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__send">
+                                                                <a href="#">
+                                                                    <div class="send__ico"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item swiper-slide">
+                                                        <div class="item__head">
+                                                            <div class="item__ava">
+                                                                <a href="#">
+                                                                    <img src="./img/ph-2.png" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="item__other">
+                                                                <div class="item__name">
+                                                                    <a href="#">
+                                                                        <span>Мария Шуткова</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item__date">
+                                                                    <span>25 июля 2017 в 10:35</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__more">
+                                                                <a href="#">
+                                                                    <div class="more-ico"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item__main">
+                                                            <a href="#">
+                                                                <div class="item__bg">
+                                                                    <img src="./img/diary-it-2.png" alt="">
+                                                                </div>
+                                                                <div class="item__title">
+                                                                    <h3>Друзья! Зима близко пора всем утепляться!</h3>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item__content">
+                                                            <div class="item__marks">
+                                                                <div class="btn mark">
+                                                                    <span>Друзья</span>
+                                                                </div>
+                                                                <div class="btn mark">
+                                                                    <span>Путешествия</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__text">
+                                                                <span>Друзья! Зима близко и если вы еще не утеплились, то самое время) прекрасная Алена <a href="#">@origami_stories</a> не оставит ваши уши на морозе) очень нежные и теплые шапочки ждут вас! п.с. а еще у Алены очень красивый профиль в инстаграм, все туда за вдохновением по всем вопросам прошу ко мне в личные сообщения.</span>
+                                                            </div>
+                                                            <div class="item__adress">
+                                                                <a href="#">
+                                                                    <span>Nizhni Novgorod region, N.Novgorod, Alekseevskaya 6</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item__opinions">
+                                                                <div class="item__opinions-cont">
+                                                                    <div class="item__opinion-list">
+                                                                        <div class="item__opinion item__opinion_happy">
+                                                                            <span></span>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item__opinion-val">
+                                                                        <span>45</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item__opinions-panel">
+                                                                    <div class="item__opinions-list">
+                                                                        <div class="item__opinion item__opinion_happy">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_embar">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                        <div class="item__opinion item__opinion_laugh">
+                                                                            <span></span>
+                                                                            <div class="item__opinion-dscrp">Круто</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item__send">
+                                                                <a href="#">
+                                                                    <div class="send__ico"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="side side_r">
+
+                        <div class="wrap wrap_friends">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__txt">
+                                                <h4>Друзья</h4>
+                                            </div>
+                                            <div class="title__val">
+                                                <span>316</span>
+                                            </div>
+                                        </div>
+                                        <div class="use">
+                                            <div class="upd">
+                                                <a href="#">
+                                                    <span>Обновления</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="friends">
+                                            <div class="friends__list">
+                                                <div class="friend friend_online">
+                                                    <a href="#">
+                                                        <div class="friend__cont">
+                                                            <div class="friend__img">
+                                                                <img src="./img/ava1.png" alt="">
+                                                            </div>
+                                                            <div class="friend__name">
+                                                                <span>Антон Комлев</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="friend friend_online">
+                                                    <a href="#">
+                                                        <div class="friend__cont">
+                                                            <div class="friend__img">
+                                                                <img src="./img/ava2.png" alt="">
+                                                            </div>
+                                                            <div class="friend__name">
+                                                                <span>Антон Комлев</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="friend friend_online">
+                                                    <a href="#">
+                                                        <div class="friend__cont">
+                                                            <div class="friend__img">
+                                                                <img src="./img/ava3.png" alt="">
+                                                            </div>
+                                                            <div class="friend__name">
+                                                                <span>Антон Комлев</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="friend friend_online">
+                                                    <a href="#">
+                                                        <div class="friend__cont">
+                                                            <div class="friend__img">
+                                                                <img src="./img/ava4.png" alt="">
+                                                            </div>
+                                                            <div class="friend__name">
+                                                                <span>Антон Комлев</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="friend friend_online">
+                                                    <a href="#">
+                                                        <div class="friend__cont">
+                                                            <div class="friend__img">
+                                                                <img src="./img/ava1.png" alt="">
+                                                            </div>
+                                                            <div class="friend__name">
+                                                                <span>Антон Комлев</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="friends__common">
+                                                <a href="#">
+                                                    <div class="common__imgs">
+                                                        <div class="common__img">
+                                                            <img src="./img/ava1.png" alt="">
+                                                        </div>
+                                                        <div class="common__img">
+                                                            <img src="./img/ava2.png" alt="">
+                                                        </div>
+                                                        <div class="common__img">
+                                                            <img src="./img/ava3.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="common__val">
+                                                        <span>3 Общих друга</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap wrap_probably">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__txt">
+                                                <h4>Вы можете их знать</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="probably">
+                                            <div class="probably__swipe swiper-container">
+                                                <div class="probably__swipe-cont swiper-wrapper">
+                                                    <div class="item swiper-slide">
+                                                        <div class="item__img">
+                                                            <a href="#">
+                                                                <img src="./img/ava1.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="item__text">
+                                                            <div class="item__name">
+                                                                <span>Дмитрий Подольский</span>
+                                                            </div>
+                                                            <div class="item__other">
+                                                                <span>32 года, 18 общих друзей</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item swiper-slide">
+                                                        <div class="item__img">
+                                                            <a href="#">
+                                                                <img src="./img/ava1.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="item__text">
+                                                            <div class="item__name">
+                                                                <span>Дмитрий Подольский</span>
+                                                            </div>
+                                                            <div class="item__other">
+                                                                <span>32 года, 18 общих друзей</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                </div>
+                                            </div>
+                                            <div class="probably__button">
+                                                <button class="btn" type="button">
+                                                    <span>Мы знакомы</span>
+                                                </button>
+                                            </div>
+                                            <div class="probably__seeall">
+                                                <a href="#">
+                                                    <span>Смотреть все рекомендации</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap wrap_photos">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__vis">
+                                                <div class="ico">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="title__txt title__txt_link">
+                                                <a href="#">
+                                                    <h4>Фото</h4>
+                                                </a>
+                                            </div>
+                                            <div class="title__val">
+                                                <span>1138</span>
+                                            </div>
+                                        </div>
+                                        <div class="use">
+                                            <a href="#">
+                                                <div class="ar"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="photos">
+                                            <div class="photos__list">
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-1.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-2.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-3.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-5.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-6.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-7.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-8.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="photo">
+                                                    <a href="#">
+                                                        <img src="./img/ph-9.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap wrap_videos">
+                            <div class="cont">
+                                <div class="head">
+                                    <div class="head__box">
+                                        <div class="title">
+                                            <div class="title__vis">
+                                                <div class="ico">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="title__txt title__txt_link">
+                                                <a href="#">
+                                                    <h4>Видео</h4>
+                                                </a>
+                                            </div>
+                                            <div class="title__val">
+                                                <span>236</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content__box">
+                                        <div class="videos">
+                                            <div class="videos__list">
+                                                <div class="video">
+                                                    <a href="#">
+                                                        <div class="video__cont">
+                                                            <div class="video__preview">
+                                                                <div class="preview__img">
+                                                                    <img src="./img/vid1.png" alt="">
+                                                                </div>
+                                                                <div class="preview__time">
+                                                                    <span>3:05</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="video__title">
+                                                                <span>Орёл и Решка. Неизведанная Европа. #9 Фарерские ... </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="video">
+                                                    <a href="#">
+                                                        <div class="video__cont">
+                                                            <div class="video__preview">
+                                                                <div class="preview__img">
+                                                                    <img src="./img/vid2.png" alt="">
+                                                                </div>
+                                                                <div class="preview__time">
+                                                                    <span>3:05</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="video__title">
+                                                                <span>Орёл и Решка. Неизведанная Европа. #9 Фарерские ... </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="video">
+                                                    <a href="#">
+                                                        <div class="video__cont">
+                                                            <div class="video__preview">
+                                                                <div class="preview__img">
+                                                                    <img src="./img/vid3.png" alt="">
+                                                                </div>
+                                                                <div class="preview__time">
+                                                                    <span>3:05</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="video__title">
+                                                                <span>Орёл и Решка. Неизведанная Европа. #9 Фарерские ... </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="video">
+                                                    <a href="#">
+                                                        <div class="video__cont">
+                                                            <div class="video__preview">
+                                                                <div class="preview__img">
+                                                                    <img src="./img/vid4.png" alt="">
+                                                                </div>
+                                                                <div class="preview__time">
+                                                                    <span>3:05</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="video__title">
+                                                                <span>Орёл и Решка. Неизведанная Европа. #9 Фарерские ... </span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wrapper wrapper_footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__items">
+                        <div class="footer__items-list">
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>О проекте</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>Обратная связь</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>Замечания разработчикам</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <a href="#">
+                                    <div class="footer__item-cont">
+                                        <span>Политика конфиденциальности</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__sv">
+                        <span>©  2018  Свежий ветер</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
