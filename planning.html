@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SV</title>
+
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/simplebar.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="./js/main_planning.js"></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+
+</head>
+<body>
+<div class="main-wrapper">
+
+    <!-- header -->
+    <div class="wrapper wrapper_header">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <div class="menu">
+                        <div class="menu__item">
+                            <a href="#">
+                                <div class="menu__item-cont">
+                                    <span>Мы</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#">
+                                <div class="menu__item-cont">
+                                    <span>Общение</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#">
+                                <div class="menu__item-cont">
+                                    <span>Союзы</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#">
+                                <div class="menu__item-cont">
+                                    <span>Взаимопомощь</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#">
+                                <div class="menu__item-cont">
+                                    <span>Организации</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#">
+                                <div class="menu__item-cont">
+                                    <span>Товары и услуги</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <div class="search">
+                        <input type="text" placeholder="Спросить советника">
+                        <button type="button"></button>
+                    </div>
+                </div>
+                <div class="header__uses">
+                    <div class="header__use header__use_message header__use_note">
+                        <a href="#">
+                            <span class="use__ico"></span>
+                        </a>
+                    </div>
+                    <div class="header__use header__use_notif">
+                        <a href="#">
+                            <span class="use__ico"></span>
+                        </a>
+                    </div>
+                    <div class="header__use header__use_idea">
+                        <a href="#">
+                            <span class="use__ico"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper wrapper_user">
+        <div class="container">
+            <div class="user">
+                <div class="user__items">
+                    <div class="user__item-list">
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Я</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Дневник</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Жизнь</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Работа</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Учеба</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Альбом</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="user__item">
+                            <a href="#">
+                                <div class="user__item-cont">
+                                    <span>Избранное</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user__right">
+                    <a href="#">
+                        <div class="user__right-cont">
+                            <div class="user__name">
+                                <span>Павел Галт</span>
+                            </div>
+                            <div class="user__img">
+                                <img src="./img/user-img.png" alt="">
+                            </div>
+                            <div class="user__ar">
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+    <main class="wrapper planning-wrapper">
+        <div class="planning__container">
+
+            <header class="planning__header">
+                <span class="planning-header-icon"></span>
+                <h1 class="planning-header-caption">Планирование</h1>
+
+                <form class="planning-header-form" method="post" action="">
+                    <div class="planning-header-field-wrapper">
+                        <input readonly class="planning-header-field open-list" id="planning_period" value="День" placeholder="День"/>
+                        <label for="planning_period" class="planning-header-label open-list"></label>
+                    </div>
+                    <ul class="planning-header-list">
+                        <li class="planning-header-item choose-item">День</li>
+                        <li class="planning-header-item choose-item">Неделя</li>
+                        <li class="planning-header-item choose-item">Месяц</li>
+                    </ul>
+                </form>
+            </header>
+
+            <main class="planning-main-wrapper">
+
+                <section class="planning-main__container">
+
+                    <header class="planning-main__header">
+                        <span class="planning-main-header-text time" id="timezone"></span>
+                        <h2 class="planning-main-header-caption"><span id="current_date"></span>, <span id="current_week_day"></span></h2>
+                    </header>
+
+                    <div class="planning-main-table__container">
+                        <ul class="planning-main-list">
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">00:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">01:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">02:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">03:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">04:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">05:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">06:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">07:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">08:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag myself">
+                                        <img src="img/planning/cup-of-tea.svg" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text">Завтрак</p>
+                                    </div>
+                                    <div class="planning-main-tag myself">
+                                        <img src="img/planning/gym.svg" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text">Зарядка</p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">09:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">10:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag family">
+                                        <img src="img/planning/heart.svg" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text">Прогулка с ребенком</p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">11:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag shop">
+                                        <img src="img/planning/shop-bag.svg" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text">Покупка продуктов</p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">12:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">13:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">14:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">15:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">16:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">17:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">18:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">19:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">20:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">21:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">22:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                            <li class="planning-main-item">
+                                <span class="planning-main-item-time">23:00</span>
+                                <section class="planning-main-item__container">
+                                    <div class="planning-main-tag">
+                                        <img src="img/" class="planning-main-tag-icon" alt="" />
+                                        <p class="planning-main-tag-text"></p>
+                                    </div>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <aside class="planning-main-aside__container">
+
+                    <header class="planning-main-aside__header">
+                        <form class="planning-main-aside-header-form" method="post" action="">
+                            <div class="planning-main-aside-header-field-wrapper">
+                                <input readonly class="planning-main-aside-header-field open-list" id="planning_dates"/>
+                                <label for="planning_dates" class="planning-main-aside-header-label open-list"></label>
+                            </div>
+                            <ul class="planning-main-aside-header-list">
+                                <li class="planning-main-aside-header-item choose-item">День</li>
+                                <li class="planning-main-aside-header-item choose-item">Неделя</li>
+                                <li class="planning-main-aside-header-item choose-item">Месяц</li>
+                            </ul>
+                        </form>
+                    </header>
+
+                    <ul class="planning-main-aside-list">
+                        <li class="planning-main-aside-item active" id="first_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item active" id="second_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item active" id="third_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item active" id="fourth_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item active" id="fifth_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item active" id="sixth_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item active" id="seventh_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item">
+                                    <input readonly type="checkbox" class="planning-btn open-list" />
+                                    <ul class="planning-list more">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+
+            </main>
+
+        </div>
+
+        <aside class="planning-aside">
+
+            <section class="planning-aside__container">
+
+                <header class="planning-aside__header">
+                    <p class="planning-aside-header-btn"></p>
+                    <span class="planning-aside-header-setting"></span>
+                </header>
+
+                <div class="planning-aside__calendar" id="planning_calendar"></div>
+
+            </section>
+
+            <section class="planning-aside__container">
+
+                <header class="planning-aside__header">
+                    <span class="planning-aside-header-icon"></span>
+                    <h3 class="planning-aside-header-caption"></h3>
+                </header>
+
+                <ul class="planning-aside-list notification">
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag"></p>
+                        <p class="planning-aside-item-text"></p>
+                    </li>
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag"></p>
+                        <p class="planning-aside-item-text"></p>
+                    </li>
+                    <li class="planning-aside-item">
+                        <input readonly type="checkbox" class="planning-aside-btn open-list" />
+                        <ul class="planning-aside-list more">
+                            <li class="planning-aside-item">
+                                <p class="planning-aside-item-tag"></p>
+                                <p class="planning-aside-item-text"></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <footer class="planning-aside__footer">
+                    <p class="planning-aside-footer-text"></p>
+                    <p class="planning-aside-footer-tag"></p>
+                    <span class="planning-aside-footer-num"></span>
+                </footer>
+
+            </section>
+
+            <section class="planning-aside__container">
+
+                <header class="planning-aside__header">
+                    <span class="planning-aside-header-icon"></span>
+                    <h3 class="planning-aside-header-caption"></h3>
+                    <span class="planning-aside-header-text"></span>
+                </header>
+
+                <ul class="planning-aside-list statistics">
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag">Личное</p>
+                        <span class="planning-aside-item-num">100%</span>
+                    </li>
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag">Семья</p>
+                        <span class="planning-aside-item-num">65%</span>
+                    </li>
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag">Покупки</p>
+                        <span class="planning-aside-item-num">46%</span>
+                    </li>
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag">Учеба</p>
+                        <span class="planning-aside-item-num">31%</span>
+                    </li>
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag">Работа</p>
+                        <span class="planning-aside-item-num">72%</span>
+                    </li>
+                    <li class="planning-aside-item">
+                        <p class="planning-aside-item-tag">Друзья</p>
+                        <span class="planning-aside-item-num">19%</span>
+                    </li>
+                </ul>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+    <!-- footer -->
+    <div class="wrapper wrapper_footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__items">
+                    <div class="footer__items-list">
+                        <div class="footer__item">
+                            <a href="#">
+                                <div class="footer__item-cont">
+                                    <span>О проекте</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="footer__item">
+                            <a href="#">
+                                <div class="footer__item-cont">
+                                    <span>Обратная связь</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="footer__item">
+                            <a href="#">
+                                <div class="footer__item-cont">
+                                    <span>Замечания разработчикам</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="footer__item">
+                            <a href="#">
+                                <div class="footer__item-cont">
+                                    <span>Политика конфиденциальности</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__sv">
+                    <span>©  2018  Свежий ветер</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+</div>
+</body>
+</html>
