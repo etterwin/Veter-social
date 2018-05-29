@@ -195,7 +195,8 @@
 
                 <form class="planning-header-form" method="post" action="">
                     <div class="planning-header-field-wrapper">
-                        <input readonly class="planning-header-field open-list" id="planning_period" value="День" placeholder="День"/>
+                        <p class="planning-header-field-text open-list">День</p>
+                        <input type="hidden" readonly class="planning-header-field" id="planning_period" value="День" placeholder="День"/>
                         <label for="planning_period" class="planning-header-label open-list"></label>
                     </div>
                     <ul class="planning-header-list">
@@ -219,7 +220,7 @@
                         <ul class="planning-main-list">
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">00:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -228,7 +229,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">01:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -237,7 +238,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">02:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -246,7 +247,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">03:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -255,7 +256,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">04:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -264,7 +265,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">05:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -273,7 +274,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">06:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -282,7 +283,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">07:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -293,18 +294,22 @@
                                 <span class="planning-main-item-time">08:00</span>
                                 <section class="planning-main-item__container">
                                     <div class="planning-main-tag myself">
-                                        <img src="img/planning/cup-of-tea.svg" class="planning-main-tag-icon" alt="" />
+                                        <svg class="planning-main-tag-icon fill" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4293 11.6588C13.4293 11.8472 13.2682 12 13.0694 12H0.359915C0.161152 12 0 11.8472 0 11.6588C0 11.4704 0.161152 11.3176 0.359915 11.3176H13.0694C13.2682 11.3176 13.4293 11.4704 13.4293 11.6588ZM6.34934 6.05804C6.41872 6.11941 6.50685 6.14978 6.59485 6.14978C6.69113 6.14978 6.78718 6.11336 6.85808 6.04137C6.99368 5.90362 6.98581 5.68773 6.84049 5.55915C6.22346 5.01326 6.35546 3.90377 6.88575 3.27646C7.60526 2.42543 7.76363 0.908185 6.84045 0.0917348C6.69518 -0.0368485 6.46735 -0.0293425 6.33175 0.108495C6.19615 0.246248 6.20407 0.462174 6.34943 0.590715C6.9037 1.08087 6.89137 2.17871 6.32406 2.84977C5.95119 3.29088 5.72831 3.88202 5.71256 4.47167C5.69524 5.11608 5.92145 5.6795 6.34934 6.05804ZM14 5.34928V6.0038C14 6.94209 13.1948 7.7054 12.2051 7.7054H11.4016C10.8562 9.14289 9.4034 10.1738 7.7015 10.1738H5.72795C3.56063 10.1738 1.79741 8.50236 1.79741 6.44789V3.06314C1.79741 2.87472 1.95856 2.72196 2.15733 2.72196H4.46595C4.93456 2.04663 4.9136 1.05084 4.39334 0.590672C4.24803 0.462131 4.24015 0.246248 4.37575 0.108453C4.51135 -0.0293425 4.73913 -0.0368059 4.88445 0.0917774C5.8074 0.908185 5.64908 2.42538 4.92975 3.27642C4.39928 3.90381 4.26724 5.0133 4.88445 5.55911C5.02976 5.68769 5.03768 5.90353 4.90208 6.04137C4.76648 6.17912 4.5387 6.18658 4.39339 6.05809C3.96536 5.6795 3.73915 5.11612 3.75638 4.47167C3.76624 4.10426 3.85648 3.73625 4.01336 3.40432H2.51724V6.44789C2.51724 8.12612 3.95757 9.49141 5.72795 9.49141H7.7015C9.47187 9.49141 10.9122 8.12608 10.9122 6.44789V3.40432H8.20605C8.00729 3.40432 7.84614 3.25156 7.84614 3.06314C7.84614 2.87472 8.00729 2.72196 8.20605 2.72196H11.2721C11.4709 2.72196 11.632 2.87472 11.632 3.06314V3.64767H12.2051C13.1948 3.64767 14 4.41098 14 5.34928ZM13.2802 5.34928C13.2802 4.78726 12.7979 4.33004 12.2051 4.33004H11.632V7.02308H12.2051C12.7979 7.02308 13.2802 6.56581 13.2802 6.00384V5.34928Z"></path>
+                                        </svg>
                                         <p class="planning-main-tag-text">Завтрак</p>
                                     </div>
                                     <div class="planning-main-tag myself">
-                                        <img src="img/planning/gym.svg" class="planning-main-tag-icon" alt="" />
+                                        <svg class="planning-main-tag-icon fill" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9238 4.07105L12.9999 2.99495L11.7461 1.74118L12.2301 1.25721L11.692 0.719163L11.208 1.20313L10.0049 0.000101562L8.92874 1.07621L7.85252 0L6.23819 1.61426L8.51752 3.89349L3.89367 8.51712L1.6143 6.23785L0 7.85216L1.07684 8.92895L0.00058401 10.0051L1.20367 11.2082L0.701395 11.7104L1.2395 12.2485L1.74174 11.7462L2.99559 13L4.07182 11.9238L5.14748 12.9994L6.76184 11.3852L4.43174 9.05519L9.05558 4.43154L11.3856 6.76151L13 5.14723L11.9238 4.07105ZM2.99561 11.9239L1.07679 10.0051L1.61491 9.467L3.53374 11.3857L2.99561 11.9239ZM5.68566 11.3852L5.14751 11.9233L1.07618 7.85216L1.61433 7.31401L5.68566 11.3852ZM10.0049 1.07623L11.9237 2.99497L11.3857 3.533L9.46684 1.61426L10.0049 1.07623ZM7.31434 1.61426L7.85249 1.07613L11.9238 5.14728L11.3857 5.68543L7.31434 1.61426Z"></path>
+                                        </svg>
                                         <p class="planning-main-tag-text">Зарядка</p>
                                     </div>
                                 </section>
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">09:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -315,7 +320,9 @@
                                 <span class="planning-main-item-time">10:00</span>
                                 <section class="planning-main-item__container">
                                     <div class="planning-main-tag family">
-                                        <img src="img/planning/heart.svg" class="planning-main-tag-icon" alt="" />
+                                        <svg class="planning-main-tag-icon stroke" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2718 0.694386C10.3008 -0.224257 8.73013 -0.224257 7.75916 0.694386L6 2.35335L4.24084 0.688982C3.26987 -0.229661 1.69919 -0.229661 0.728224 0.688982C-0.242742 1.60762 -0.242742 3.09367 0.728224 4.01231L6 9L11.2718 4.01231C12.2427 3.09907 12.2427 1.61303 11.2718 0.694386Z" transform="translate(1 1)" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
                                         <p class="planning-main-tag-text">Прогулка с ребенком</p>
                                     </div>
                                 </section>
@@ -324,14 +331,16 @@
                                 <span class="planning-main-item-time">11:00</span>
                                 <section class="planning-main-item__container">
                                     <div class="planning-main-tag shop">
-                                        <img src="img/planning/shop-bag.svg" class="planning-main-tag-icon" alt="" />
+                                        <svg class="planning-main-tag-icon fill" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9238 4.07105L12.9999 2.99495L11.7461 1.74118L12.2301 1.25721L11.692 0.719163L11.208 1.20313L10.0049 0.000101562L8.92874 1.07621L7.85252 0L6.23819 1.61426L8.51752 3.89349L3.89367 8.51712L1.6143 6.23785L0 7.85216L1.07684 8.92895L0.00058401 10.0051L1.20367 11.2082L0.701395 11.7104L1.2395 12.2485L1.74174 11.7462L2.99559 13L4.07182 11.9238L5.14748 12.9994L6.76184 11.3852L4.43174 9.05519L9.05558 4.43154L11.3856 6.76151L13 5.14723L11.9238 4.07105ZM2.99561 11.9239L1.07679 10.0051L1.61491 9.467L3.53374 11.3857L2.99561 11.9239ZM5.68566 11.3852L5.14751 11.9233L1.07618 7.85216L1.61433 7.31401L5.68566 11.3852ZM10.0049 1.07623L11.9237 2.99497L11.3857 3.533L9.46684 1.61426L10.0049 1.07623ZM7.31434 1.61426L7.85249 1.07613L11.9238 5.14728L11.3857 5.68543L7.31434 1.61426Z"></path>
+                                        </svg>
                                         <p class="planning-main-tag-text">Покупка продуктов</p>
                                     </div>
                                 </section>
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">12:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -340,7 +349,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">13:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -349,7 +358,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">14:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -358,7 +367,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">15:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -367,7 +376,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">16:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -376,7 +385,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">17:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -385,7 +394,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">18:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -394,7 +403,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">19:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -403,7 +412,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">20:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -412,7 +421,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">21:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -421,7 +430,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">22:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -430,7 +439,7 @@
                             </li>
                             <li class="planning-main-item">
                                 <span class="planning-main-item-time">23:00</span>
-                                <section class="planning-main-item__container">
+                                <section class="planning-main-item__container empty">
                                     <div class="planning-main-tag">
                                         <img src="img/" class="planning-main-tag-icon" alt="" />
                                         <p class="planning-main-tag-text"></p>
@@ -447,19 +456,15 @@
                     <header class="planning-main-aside__header">
                         <form class="planning-main-aside-header-form" method="post" action="">
                             <div class="planning-main-aside-header-field-wrapper">
-                                <input readonly class="planning-main-aside-header-field open-list" id="planning_dates"/>
+                                <p class="planning-main-aside-header-field-text open-list">21-27 Мая, 2018</p>
+                                <input type="hidden" readonly class="planning-main-aside-header-field" value="21-27 Мая, 2018" id="planning_dates"/>
                                 <label for="planning_dates" class="planning-main-aside-header-label open-list"></label>
                             </div>
-                            <ul class="planning-main-aside-header-list">
-                                <li class="planning-main-aside-header-item choose-item">День</li>
-                                <li class="planning-main-aside-header-item choose-item">Неделя</li>
-                                <li class="planning-main-aside-header-item choose-item">Месяц</li>
-                            </ul>
                         </form>
                     </header>
 
                     <ul class="planning-main-aside-list">
-                        <li class="planning-main-aside-item active" id="first_day">
+                        <li class="planning-main-aside-item active sun" id="first_day">
                             <h2 class="planning-main-aside-caption">
                                 <span class="day_of_the_week"></span>, <span class="day"></span>
                             </h2>
@@ -467,16 +472,17 @@
                                 <li class="planning-item">Завтрак</li>
                                 <li class="planning-item">Встреча с подругами</li>
                                 <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="first_day_more" class="planning-btn open-list" />
+                                    <label for="first_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="first_day">
                                         <li class="planning-item">Что-то</li>
                                         <li class="planning-item">И еще что-то</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="planning-main-aside-item active" id="second_day">
+                        <li class="planning-main-aside-item sun" id="second_day">
                             <h2 class="planning-main-aside-caption">
                                 <span class="day_of_the_week"></span>, <span class="day"></span>
                             </h2>
@@ -484,16 +490,39 @@
                                 <li class="planning-item">Завтрак</li>
                                 <li class="planning-item">Встреча с подругами</li>
                                 <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="second_day_more" class="planning-btn open-list" />
+                                    <label for="second_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="second_day">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
                                         <li class="planning-item">Что-то</li>
                                         <li class="planning-item">И еще что-то</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="planning-main-aside-item active" id="third_day">
+                        <li class="planning-main-aside-item cloud" id="third_day">
                             <h2 class="planning-main-aside-caption">
                                 <span class="day_of_the_week"></span>, <span class="day"></span>
                             </h2>
@@ -501,16 +530,27 @@
                                 <li class="planning-item">Завтрак</li>
                                 <li class="planning-item">Встреча с подругами</li>
                                 <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="third_day_more" class="planning-btn open-list" />
+                                    <label for="third_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="third_day">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
                                         <li class="planning-item">Что-то</li>
                                         <li class="planning-item">И еще что-то</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="planning-main-aside-item active" id="fourth_day">
+                        <li class="planning-main-aside-item rain" id="fourth_day">
                             <h2 class="planning-main-aside-caption">
                                 <span class="day_of_the_week"></span>, <span class="day"></span>
                             </h2>
@@ -518,16 +558,37 @@
                                 <li class="planning-item">Завтрак</li>
                                 <li class="planning-item">Встреча с подругами</li>
                                 <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="fourth_day_more" class="planning-btn open-list" />
+                                    <label for="fourth_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="fourth_day">
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="planning-main-aside-item cloud" id="fifth_day">
+                            <h2 class="planning-main-aside-caption">
+                                <span class="day_of_the_week"></span>, <span class="day"></span>
+                            </h2>
+                            <ul class="planning-list">
+                                <li class="planning-item">Завтрак</li>
+                                <li class="planning-item">Встреча с подругами</li>
+                                <li class="planning-item">Сделать задание по учебе</li>
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="fifth_day_more" class="planning-btn open-list" />
+                                    <label for="fifth_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="fifth_day">
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
+                                        <li class="planning-item">Что-то</li>
+                                        <li class="planning-item">И еще что-то</li>
                                         <li class="planning-item">Что-то</li>
                                         <li class="planning-item">И еще что-то</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="planning-main-aside-item active" id="fifth_day">
+                        <li class="planning-main-aside-item sun" id="sixth_day">
                             <h2 class="planning-main-aside-caption">
                                 <span class="day_of_the_week"></span>, <span class="day"></span>
                             </h2>
@@ -535,16 +596,16 @@
                                 <li class="planning-item">Завтрак</li>
                                 <li class="planning-item">Встреча с подругами</li>
                                 <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="sixth_day_more" class="planning-btn open-list" />
+                                    <label for="sixth_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="sixth_day">
                                         <li class="planning-item">Что-то</li>
-                                        <li class="planning-item">И еще что-то</li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="planning-main-aside-item active" id="sixth_day">
+                        <li class="planning-main-aside-item rain" id="seventh_day">
                             <h2 class="planning-main-aside-caption">
                                 <span class="day_of_the_week"></span>, <span class="day"></span>
                             </h2>
@@ -552,26 +613,12 @@
                                 <li class="planning-item">Завтрак</li>
                                 <li class="planning-item">Встреча с подругами</li>
                                 <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
+                                <li class="planning-item submenu">
+                                    <input readonly type="checkbox" id="seventh_day_more" class="planning-btn open-list" />
+                                    <label for="seventh_day_more" class="planning-label"></label>
+                                    <ul class="planning-list more" data-listid="seventh_day">
                                         <li class="planning-item">Что-то</li>
                                         <li class="planning-item">И еще что-то</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="planning-main-aside-item active" id="seventh_day">
-                            <h2 class="planning-main-aside-caption">
-                                <span class="day_of_the_week"></span>, <span class="day"></span>
-                            </h2>
-                            <ul class="planning-list">
-                                <li class="planning-item">Завтрак</li>
-                                <li class="planning-item">Встреча с подругами</li>
-                                <li class="planning-item">Сделать задание по учебе</li>
-                                <li class="planning-item">
-                                    <input readonly type="checkbox" class="planning-btn open-list" />
-                                    <ul class="planning-list more">
                                         <li class="planning-item">Что-то</li>
                                         <li class="planning-item">И еще что-то</li>
                                     </ul>
@@ -579,6 +626,7 @@
                             </ul>
                         </li>
                     </ul>
+
                 </aside>
 
             </main>
